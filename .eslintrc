@@ -1,0 +1,60 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+  "rules": {
+    "curly": ["error", "all"],
+    "indent": ["error", 4, {
+      "SwitchCase": 1
+    }],
+    "no-multiple-empty-lines": ["error", {
+      "max": 1,
+      "maxEOF": 1
+    }],
+    "no-plusplus": ["error", {
+      "allowForLoopAfterthoughts": true
+    }],
+    "semi": ["error", "never"],
+    "valid-jsdoc": ["error", {
+      "requireReturn": false,
+      "requireReturnType": true,
+      "requireReturnDescription": false,
+      "requireParamType": true,
+      "requireParamDescription": false,
+      "prefer": {
+        "return": "returns"
+      },
+      "preferType": {
+        "Null": "null",
+        "Undefined": "undefined",
+        "Number": "number",
+        "Boolean": "boolean",
+        "String": "string",
+        "array": "Array",
+        "object": "Object"
+      }
+    }],
+    "react/forbid-prop-types": [false],
+    "react/jsx-filename-extension": [1, {
+      "extensions": [
+        ".jsx"
+      ]
+      }],
+      "react/jsx-indent": ["error", 4],
+      "react/jsx-indent-props": ["error", 4],
+      "react/react-in-jsx-scope": [false],
+      "react/prop-types": [false],
+      "no-console": "off",
+      "no-underscore-dangle": "off"
+  }
+}
